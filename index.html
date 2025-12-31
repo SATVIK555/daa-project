@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORBITAL NEXUS | Drone-Satellite Coordination</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Orbitron:wght@400;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="loading">
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="logo">ORBITAL<span>NEXUS</span></div>
+        <div class="nav-links">
+            <a href="#problem">Mission</a>
+            <a href="#architecture">System</a>
+            <a href="#algorithms">Intelligence</a>
+            <a href="#implementation">Core</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero section" data-speed="0.5">
+        <div class="hero-bg parallax-bg" style="background-image: url('assets/hero.png');"></div>
+        <div class="overlay gradient-overlay"></div>
+
+        <div class="content-wrapper hero-content">
+            <div class="hero-badge fade-in">DAA MINI PROJECT: DESIGN & ANALYSIS OF ALGORITHMS</div>
+            <h1 class="glitch-text fade-in-up delay-1">Drone–Satellite<br>Coordination System</h1>
+            <p class="subtitle fade-in-up delay-2">Algorithmic Coordination of Drones Using Satellite Intelligence in
+                War Space</p>
+
+            <!-- TEAM MEMBERS & DETAILS -->
+            <div class="hero-details fade-in-up delay-3" style="margin-top: 2rem;">
+                <div class="glass-panel"
+                    style="padding: 1.5rem; display: inline-block; width: 100%; max-width: 900px; text-align: left;">
+                    <table style="width: 100%; border-collapse: collapse; color: var(--text-main); font-size: 0.9rem;">
+                        <thead>
+                            <tr style="border-bottom: 2px solid var(--accent-cyan);">
+                                <th style="padding: 10px; color: var(--accent-cyan);">TEAM MEMBERS</th>
+                                <th style="padding: 10px; color: var(--accent-cyan);">ROLL NO</th>
+                                <th style="padding: 10px; color: var(--accent-cyan);">USN</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding: 8px;">Satvik H</td>
+                                <td style="padding: 8px;">523</td>
+                                <td style="padding: 8px;">01FE24BCS109</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px;">Vinayak S W</td>
+                                <td style="padding: 8px;">504</td>
+                                <td style="padding: 8px;">01FE24BCS177</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px;">Siddharth M</td>
+                                <td style="padding: 8px;">521</td>
+                                <td style="padding: 8px;">01FE24BCS105</td>
+
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px;">Niyas N</td>
+                                <td style="padding: 8px;">513</td>
+                                <td style="padding: 8px;">01FE24BCS186</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div
+                        style="margin-top: 15px; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 10px; font-size: 0.9rem;">
+                        <strong>Guide:</strong> Prof. Priyadarshini &nbsp;|&nbsp;
+                        <strong>College:</strong> KLE Technological University, Hubli
+                    </div>
+                </div>
+            </div>
+
+            <a href="#problem" class="cta-button fade-in-up delay-3" style="margin-top: 2rem;">
+                <span>INITIALIZE SEQUENCE</span>
+                <i data-lucide="chevron-right"></i>
+            </a>
+        </div>
+
+        <div class="scroll-indicator fade-in delay-4">
+            <span>SCROLL TO BEGIN</span>
+            <div class="line"></div>
+        </div>
+    </header>
+
+    <!-- PROBLEM STATEMENT -->
+    <section id="problem" class="section dark-section">
+        <div class="section-bg parallax-bg" style="background-image: url('assets/problem.png'); opacity: 0.4;"></div>
+        <div class="content-wrapper split-layout">
+            <div class="text-block reveal">
+                <h2 class="section-title">PROBLEM <span class="accent-red">STATEMENT</span></h2>
+                <h3 class="headline-text">Algorithmic Warspace Control</h3>
+                <div class="body-text" style="font-size: 1.1rem; line-height: 1.8;">
+                    <p><strong>Design an algorithmic system that:</strong></p>
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li style="margin-bottom: 10px;">• Uses <strong>satellite intelligence</strong> to divide a
+                            large operational area.</li>
+                        <li style="margin-bottom: 10px;">• Assigns <strong>drones efficiently</strong> to specific
+                            zones.</li>
+                        <li style="margin-bottom: 10px;">• Finds <strong>optimal and safe drone paths</strong> (Shortest
+                            Path).</li>
+                        <li style="margin-bottom: 10px;">• Minimizes <strong>fuel, time, and risk</strong>.</li>
+                        <li style="margin-bottom: 10px;">• Maximizes <strong>coverage and mission success</strong>.</li>
+                    </ul>
+                </div>
+                <div class="stat-grid">
+                    <div class="stat-item">
+                        <span class="stat-val">12</span>
+                        <span class="stat-label">Algorithms Analyzed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-val">4</span>
+                        <span class="stat-label">Team Members</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY ALGORITHMS (Features) -->
+    <section id="algorithms-intro" class="section black-section">
+        <div class="content-wrapper">
+            <div class="section-header center-text reveal">
+                <h2 class="section-title">TEAM STRUCTURE</h2>
+                <h3>Mandatory Algorithm Allocation</h3>
+            </div>
+
+            <div class="glass-panel reveal" style="padding: 2rem; margin-bottom: 2rem;">
+                <p style="text-align: center; font-size: 1.1rem; margin-bottom: 2rem;">
+                    <strong>Assumption:</strong> A team of 4 members. Each member analyzes exactly 3 algorithms.<br>
+                    <strong>Total Algorithms Analyzed = 12.</strong><br>
+                    Backtracking is NOT used.
+                </p>
+                <div class="feature-grid" style="grid-template-columns: repeat(2, 1fr); gap: 1.5rem;">
+                    <div class="feature-card">
+                        <h4 style="color: var(--accent-cyan);">Member 1: Graph Shortest Path</h4>
+                        <ol style="padding-left: 20px; text-align: left;">
+                            <li>Dijkstra’s Algorithm</li>
+                            <li>Bellman–Ford Algorithm</li>
+                            <li>Floyd–Warshall Algorithm</li>
+                        </ol>
+                    </div>
+                    <div class="feature-card">
+                        <h4 style="color: var(--accent-cyan);">Member 2: Algorithmic Paradigms</h4>
+                        <ol style="padding-left: 20px; text-align: left;">
+                            <li>Divide and Conquer</li>
+                            <li>Greedy Algorithm</li>
+                            <li>Dynamic Programming</li>
+                        </ol>
+                    </div>
+                    <div class="feature-card">
+                        <h4 style="color: var(--accent-cyan);">Member 3: Network & Traversal</h4>
+                        <ol style="padding-left: 20px; text-align: left;">
+                            <li>Kruskal’s Algorithm</li>
+                            <li>Prim’s Algorithm</li>
+                            <li>BFS / DFS</li>
+                        </ol>
+                    </div>
+                    <div class="feature-card">
+                        <h4 style="color: var(--accent-cyan);">Member 4: Searching & Patterns</h4>
+                        <ol style="padding-left: 20px; text-align: left;">
+                            <li>Rabin–Karp Algorithm</li>
+                            <li>KMP Algorithm</li>
+                            <li>Binary Search Algorithm</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SYSTEM OVERVIEW -->
+    <section id="architecture" class="section cyber-section">
+        <div class="section-bg parallax-bg" style="background-image: url('assets/architecture.png'); opacity: 0.6;">
+        </div>
+        <div class="content-wrapper">
+            <div class="glass-panel wide-panel reveal">
+                <div class="panel-content">
+                    <h2 class="section-title">SYSTEM ARCHITECTURE</h2>
+                    <div class="arch-diagram">
+                        <div class="arch-step">
+                            <div class="step-icon satellite"><i data-lucide="satellite"></i></div>
+                            <div class="step-info">
+                                <h5>Satellite Layer</h5>
+                                <p>Global Hub (Intelligence Source)</p>
+                            </div>
+                        </div>
+                        <div class="connector animated-line"></div>
+                        <div class="arch-step">
+                            <div class="step-icon drone"><i data-lucide="send"></i></div>
+                            <div class="step-info">
+                                <h5>Drone Swarm</h5>
+                                <p>Graph Nodes (V)</p>
+                            </div>
+                        </div>
+                        <div class="connector animated-line"></div>
+                        <div class="arch-step">
+                            <div class="step-icon base"><i data-lucide="server"></i></div>
+                            <div class="step-info">
+                                <h5>Base Station</h5>
+                                <p>Command Coordination</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="arch-desc">
+                        <strong>SYSTEM MODEL:</strong>
+                        <br>• <strong>Satellite:</strong> Acts as the <strong>Global Planner</strong>.
+                        <br>• <strong>Drones:</strong> Act as <strong>Local Execution Agents</strong>.
+                        <br>• <strong>Warspace:</strong> modeled as a <strong>Weighted Graph G(V, E)</strong>.
+                        <br>• <strong>Nodes (V):</strong> Locations / Targets.
+                        <br>• <strong>Edges (E):</strong> Distance and Risk (Weights).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ALGORITHMS MODULES -->
+    <section id="algorithms" class="section deep-section">
+        <div class="content-wrapper">
+            <div class="section-header reveal">
+                <h2 class="section-title">ALGORITHMIC MODULES</h2>
+                <h3>The Engine Behind the Network</h3>
+            </div>
+
+            <!-- MANDATORY EXHAUSTIVE TABLE -->
+            <div class="glass-panel reveal" style="padding: 1rem; overflow-x: auto;">
+                <h4 style="margin-bottom: 1rem; color: white;">ALGORITHM ANALYSIS (Consolidated)</h4>
+                <p style="font-size: 0.8rem; margin-bottom: 1rem; color: #aaa;">Scroll horizontally to view full
+                    details.</p>
+                <table border="1"
+                    style="width: 100%; border-collapse: collapse; font-size: 0.85rem; color: #ddd; border-color: #444;">
+                    <thead>
+                        <tr style="background: rgba(0, 255, 255, 0.1);">
+                            <th style="padding: 8px;">No</th>
+                            <th style="padding: 8px;">Algorithm</th>
+                            <th style="padding: 8px;">Design Technique</th>
+                            <th style="padding: 8px;">Problem Solved</th>
+                            <th style="padding: 8px;">Inputs</th>
+                            <th style="padding: 8px;">Best</th>
+                            <th style="padding: 8px;">Avg</th>
+                            <th style="padding: 8px;">Worst</th>
+                            <th style="padding: 8px;">Space</th>
+                            <th style="padding: 8px;">Application</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Member 1 -->
+                        <tr>
+                            <td>1</td>
+                            <td>Dijkstra</td>
+                            <td>Greedy</td>
+                            <td>Shortest Path (Non-neg)</td>
+                            <td>G(V,E)</td>
+                            <td>O(E+VlogV)</td>
+                            <td>O(E+VlogV)</td>
+                            <td>O(V²)</td>
+                            <td>O(V)</td>
+                            <td>Safest path finding</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Bellman-Ford</td>
+                            <td>Dynamic Prog</td>
+                            <td>Shortest Path (Neg edges)</td>
+                            <td>G(V,E)</td>
+                            <td>O(E)</td>
+                            <td>O(VE)</td>
+                            <td>O(VE)</td>
+                            <td>O(V)</td>
+                            <td>Risk metric handling</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Floyd-Warshall</td>
+                            <td>Dynamic Prog</td>
+                            <td>All-Pairs Shortest Path</td>
+                            <td>Matrix</td>
+                            <td>O(V³)</td>
+                            <td>O(V³)</td>
+                            <td>O(V³)</td>
+                            <td>O(V²)</td>
+                            <td>Global swarm routing</td>
+                        </tr>
+                        <!-- Member 2 -->
+                        <tr>
+                            <td>4</td>
+                            <td>Div & Conquer</td>
+                            <td>D & C</td>
+                            <td>Complex Problem Breakdown</td>
+                            <td>Problem P</td>
+                            <td>O(1)</td>
+                            <td>O(log n)</td>
+                            <td>O(n)</td>
+                            <td>O(log n)</td>
+                            <td>Area partitioning</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Greedy</td>
+                            <td>Greedy</td>
+                            <td>Optimization local optima</td>
+                            <td>Set S</td>
+                            <td>O(n)</td>
+                            <td>O(n log n)</td>
+                            <td>O(n²)</td>
+                            <td>O(1)</td>
+                            <td>Fuel min/Tasks</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Dynamic Prog</td>
+                            <td>DP</td>
+                            <td>Overlapping Subproblems</td>
+                            <td>Recurrence</td>
+                            <td>O(n)</td>
+                            <td>O(n²)</td>
+                            <td>O(2^n)</td>
+                            <td>O(n)</td>
+                            <td>Resource allocation</td>
+                        </tr>
+                        <!-- Member 3 -->
+                        <tr>
+                            <td>7</td>
+                            <td>Kruskal</td>
+                            <td>Greedy</td>
+                            <td>MST (Min Cost Network)</td>
+                            <td>G(V,E)</td>
+                            <td>O(E log E)</td>
+                            <td>O(E log E)</td>
+                            <td>O(E log E)</td>
+                            <td>O(V)</td>
+                            <td>Base interconnection</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Prim</td>
+                            <td>Greedy</td>
+                            <td>MST (Min Cost Network)</td>
+                            <td>G(V,E)</td>
+                            <td>O(E+VlogV)</td>
+                            <td>O(E+VlogV)</td>
+                            <td>O(V²)</td>
+                            <td>O(V)</td>
+                            <td>Redundant comms</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>BFS / DFS</td>
+                            <td>Traversal</td>
+                            <td>Graph Searching</td>
+                            <td>G(V,E)</td>
+                            <td>O(V+E)</td>
+                            <td>O(V+E)</td>
+                            <td>O(V+E)</td>
+                            <td>O(V)</td>
+                            <td>Connectivity check</td>
+                        </tr>
+                        <!-- Member 4 -->
+                        <tr>
+                            <td>10</td>
+                            <td>Rabin-Karp</td>
+                            <td>String Matches</td>
+                            <td>Pattern Matching</td>
+                            <td>Text T, Pat P</td>
+                            <td>O(n+m)</td>
+                            <td>O(n+m)</td>
+                            <td>O(nm)</td>
+                            <td>O(1)</td>
+                            <td>Signature detect</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>KMP</td>
+                            <td>String Matches</td>
+                            <td>Pattern Matching</td>
+                            <td>Text T, Pat P</td>
+                            <td>O(n+m)</td>
+                            <td>O(n+m)</td>
+                            <td>O(n+m)</td>
+                            <td>O(m)</td>
+                            <td>Signal filtering</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Binary Search</td>
+                            <td>D & C</td>
+                            <td>Searching Sorted Data</td>
+                            <td>Array A</td>
+                            <td>O(1)</td>
+                            <td>O(log n)</td>
+                            <td>O(log n)</td>
+                            <td>O(1)</td>
+                            <td>Target ID lookup</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- IMPLEMENTATION (CODE) -->
+    <section id="implementation" class="section code-section">
+        <div class="content-wrapper">
+            <div class="section-header center-text reveal">
+                <h2 class="section-title">WORKING EXAMPLE & TRACING</h2>
+                <h3>Dijkstra's Algorithm Logic</h3>
+            </div>
+
+            <div class="split-layout" style="display: flex; gap: 2rem; flex-wrap: wrap;">
+                <!-- Implementation Code -->
+                <div class="code-window reveal" style="flex: 1; min-width: 300px;">
+                    <div class="window-header">
+                        <span class="filename">dijkstra_path.cpp</span>
+                    </div>
+                    <pre><code class="language-cpp">
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+#include &lt;queue&gt;
+#define INF 9999
+using namespace std;
+
+// SATELLITE PATHFINDING KERNEL
+void dijkstra(int start, int n) {
+    vector&lt;int&gt; dist(n, INF);
+    priority_queue&lt;pair&lt;int,int&gt;, vector&lt;pair&lt;int,int&gt;&gt;, greater&lt;&gt;&gt; pq;
+    
+    dist[start] = 0;
+    pq.push({0, start});
+    
+    while(!pq.empty()) {
+        int u = pq.top().second;
+        pq.pop();
+        
+        // Check adjacency matrix/list for V
+        for(auto i : adj[u]) {
+            int v = i.first;
+            int weight = i.second;
+            
+            if(dist[v] > dist[u] + weight) {
+                dist[v] = dist[u] + weight;
+                pq.push({dist[v], v});
+            }
+        }
+    }
+}
+                    </code></pre>
+                </div>
+
+                <!-- Step-by-Step Tracing -->
+                <div class="glass-panel reveal"
+                    style="flex: 1; min-width: 300px; padding: 1.5rem; height: fit-content;">
+                    <h4 style="color: var(--accent-cyan); margin-bottom: 1rem;">Tracing Example</h4>
+                    <p style="margin-bottom: 1rem; font-size: 0.9rem;"><strong>Graph G:</strong> A(0)-&gt;B(4),
+                        A(0)-&gt;C(1), C(1)-&gt;B(2), B-&gt;D(1)</p>
+
+                    <div style="margin-bottom: 1rem; border-left: 2px solid var(--accent-cyan); padding-left: 10px;">
+                        <strong style="display:block; font-size: 0.9rem;">Iteration 1 (Start A):</strong>
+                        <div style="font-size: 0.85rem; color: #ccc;">
+                            Dist: [A:0, B:INF, C:INF, D:INF]<br>
+                            Visit A. Update B(4), C(1).
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 1rem; border-left: 2px solid var(--accent-cyan); padding-left: 10px;">
+                        <strong style="display:block; font-size: 0.9rem;">Iteration 2 (Pick C - Min 1):</strong>
+                        <div style="font-size: 0.85rem; color: #ccc;">
+                            Dist: [A:0, B:4, C:1, D:INF]<br>
+                            Visit C. Path C-&gt;B is 1+2=3. 3 &lt; 4. Update B(3).
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 1rem; border-left: 2px solid var(--accent-cyan); padding-left: 10px;">
+                        <strong style="display:block; font-size: 0.9rem;">Iteration 3 (Pick B - Min 3):</strong>
+                        <div style="font-size: 0.85rem; color: #ccc;">
+                            Dist: [A:0, B:3, C:1, D:INF]<br>
+                            Visit B. Path B-&gt;D is 3+1=4. Update D(4).
+                        </div>
+                    </div>
+
+                    <p style="margin-top: 1rem; color: #88ff88; font-weight: bold;">Optimal Path: A -&gt; C -&gt; B
+                        -&gt; D</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SIMULATION / RESULTS -->
+    <section id="simulation" class="section results-section">
+        <div class="content-wrapper">
+            <!-- COMPARISONS -->
+            <div class="text-block reveal" style="width: 100%; margin-bottom: 2rem;">
+                <h2 class="section-title">COMPARISON & OBSERVATIONS</h2>
+                <table class="glass-panel"
+                    style="width: 100%; border-collapse: collapse; margin-top: 1rem; color: #ddd;">
+                    <thead>
+                        <tr style="border-bottom: 1px solid #555;">
+                            <th style="padding: 10px; text-align: left;">Feature</th>
+                            <th style="padding: 10px; text-align: left;">Dijkstra</th>
+                            <th style="padding: 10px; text-align: left;">Bellman-Ford</th>
+                            <th style="padding: 10px; text-align: left;">Floyd-Warshall</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="padding: 8px;">Speed (Dense)</td>
+                            <td style="color: #8f8;">Fastest</td>
+                            <td>Slow</td>
+                            <td>Very Slow</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px;">Negative Edges</td>
+                            <td style="color: #f88;">Fails</td>
+                            <td style="color: #8f8;">Handles</td>
+                            <td>Handles</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px;">Implementation</td>
+                            <td>Moderate</td>
+                            <td>Simple</td>
+                            <td>Simple</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px;">Suitability</td>
+                            <td style="color: #8f8;"><strong>Best for Drone Path</strong></td>
+                            <td>Route Calculation</td>
+                            <td>Network Analysis</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="margin-top: 1rem;">
+                    <strong>Observation:</strong> For real-time drone navigation where edge weights (distance) are
+                    non-negative, Dijkstra's algorithm is superior due to O(V log V) efficiency compared to
+                    Bellman-Ford's O(VE).
+                </p>
+            </div>
+
+            <!-- APPLICATIONS -->
+            <div class="reveal">
+                <h2 class="section-title">REAL-WORLD APPLICATIONS</h2>
+                <ul style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; list-style: none; padding: 0;">
+                    <li
+                        style="background: rgba(255,255,255,0.05); padding: 10px; border-left: 3px solid var(--accent-red);">
+                        Military Surveillance & Reconnaissance</li>
+                    <li
+                        style="background: rgba(255,255,255,0.05); padding: 10px; border-left: 3px solid var(--accent-cyan);">
+                        Disaster Relief (Flood/Earthquake)</li>
+                    <li
+                        style="background: rgba(255,255,255,0.05); padding: 10px; border-left: 3px solid var(--accent-purple);">
+                        Border Intrusion Monitoring</li>
+                    <li style="background: rgba(255,255,255,0.05); padding: 10px; border-left: 3px solid orange);">
+                        Forest Fire Detection</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONCLUSION & FUTURE SCOPE -->
+    <section id="future" class="section black-section" style="min-height: 50vh; padding-top: 2rem;">
+        <div class="content-wrapper">
+            <div class="text-block reveal"
+                style="max-width: 800px; margin: 0 auto; text-align: center; border: none; background: transparent;">
+                <h2 class="section-title">CONCLUSION & FUTURE SCOPE</h2>
+                <h3 style="font-size: 2rem; margin-bottom: 2rem;">Mission Summary</h3>
+                <p class="body-text" style="text-align: left;">
+                    <strong>Conclusion:</strong>
+                    The "Drone–Satellite Coordination System" successfully demonstrates how DAA concepts like Dijkstra's
+                    Algorithm and MST can solve complex real-world coordination problems. By modeling the warspace as a
+                    graph, we achieved optimal pathfinding and efficient resource allocation, proving that algorithmic
+                    efficiency translates directly to mission success.
+                    <br><br>
+                    <strong>Future Scope:</strong>
+                </p>
+                <div style="display: flex; gap: 20px; justify-content: center; margin-top: 2rem; flex-wrap: wrap;">
+                    <div
+                        style="border: 1px solid #333; padding: 1.5rem; border-radius: 10px; width: 250px; background: rgba(0,0,0,0.3);">
+                        <span
+                            style="color: var(--accent-cyan); font-weight: bold; display: block; margin-bottom: 0.5rem;">AI
+                            / ML Integration</span>
+                        Using Reinforcement Learning for dynamic obstacle avoidance.
+                    </div>
+                    <div
+                        style="border: 1px solid #333; padding: 1.5rem; border-radius: 10px; width: 250px; background: rgba(0,0,0,0.3);">
+                        <span
+                            style="color: var(--accent-purple); font-weight: bold; display: block; margin-bottom: 0.5rem;">3D
+                            Space Routing</span>
+                        Extending Graph logic to 3D coordinates (x, y, z) for aerial manoeuvres.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="content-wrapper">
+            <div class="footer-logo">ORBITAL<span>NEXUS</span></div>
+            <p class="credits">
+                DAA MINI PROJECT 2025 &copy; <br>
+                Designing the Future of Autonomous Systems.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
