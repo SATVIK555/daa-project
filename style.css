@@ -139,6 +139,7 @@ h5 {
     /* Taller for parallax */
     background-size: cover;
     background-position: center;
+    background: linear-gradient(135deg, rgba(0,240,255,0.1) 0%, rgba(112,0,255,0.1) 100%);
     z-index: 0;
     will-change: transform;
 }
@@ -667,3 +668,4 @@ pre {
    /* CSS file loaded successfully - Build triggered */
 
 }
+
